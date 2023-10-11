@@ -14,7 +14,7 @@ This repository contains a machine learning pipeline designed to preprocess, tra
 
 
 ##### Folder Structure
-![Folder structure](https://github.com/askavania/cruise_prediction/blob/main/Cruise%20Ticket%20Prediction%20ML%20Pipeline/Images/image-2.png) 
+![Folder structure](https://github.com/askavania/cruise_prediction/blob/main/Cruise%20Ticket%20Prediction%20ML%20Pipeline/Images/image-4.png) 
 
 
 ### c. Execution Instructions
