@@ -1,0 +1,12 @@
+# Data manipulation and analysis
+pandas
+numpy
+
+# Data visualization
+matplotlib
+seaborn
+missingno
+
+# Machine learning and preprocessing
+scikit-learn
+xgboost
