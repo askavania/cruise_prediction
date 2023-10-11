@@ -1,13 +1,20 @@
-# AISG Tech Assessment - Machine Learning Pipeline
+# Cruise Ticket Prediction Machine Learning Pipeline
 
-### a. Yong Quming Benedict | benyong.qm@gmail.com
+### a. Objectives
+Cruise Company A (CCA) is a prestigious cruise company that aims to provide our customers with the best experiences possible, vying to be the top choice for travellers worldwide. The company is dedicated to constantly improving our service, tailoring offerings to match guests' needs and tastes, hence ensuring an unforgettable cruising experience. As such, CCA create an interaction-rich ecosystem where they cherish customer involvement at every touchpoint of their journey synergizing the offline and online experiences.
+
+To elevate the guest experience and meet evolving demands, CCA regularly undertakes pre-purchase surveys on their website, incentivising future customers with attractive vouchers
+and upgrades. The survey requires potential guests to rate their preferences on a range of indicators critical in ensuring a memorable cruise journey - "Onboard Wifi Service", "Embarkation/Disembarkation time convenient", "Ease of Online booking", "Gate location", "Onboard Dining Service", "Online Check-in", "Cabin Comfort", "Onboard Entertainment", "Cabin service", "Baggage handling", "Port Check-in Service", "Onboard Service" as well as "Cleanliness". These preferences provide CCA with comprehensive insights into what potential guests value the most, ensuring that they can meticulously tailor offerings to guest desires. Simultaneously, after concluding each journey, CCA collects post-trip data such as "Cruise Name",
+"Cruise Distance", "WiFi", "Dining", "Entertainment" travelled to cross-reference and contextualise guest preferences along with the realities of their chosen itineraries. This information shapes the foundations for the company's data repository further enriching our understanding of guest preferences and patterns. It proves to be invaluable as it empowers the company with insights necessary to formulate efficient and compelling marketing strategies, amplifying their appeal in the cruising market.
+
+Harnessing the collective power of the pre-purchase and post-trip data, we predict the type of tickets potential customers are most likely to purchase. By predicting guests' preferred ticket type, the company aims to customise the experiences and amenities, masterfully aligning them with the guests' comfort and preferences to maximise potential revenue.
 
 ### b. Overview and Folder Structure
 This repository contains a machine learning pipeline designed to preprocess, train, and evaluate a model on cruise customer data. The pipeline is structured to ensure modularity, scalability, and ease of use.
 
 
 ##### Folder Structure
-![Folder structure](https://github.com/askavania/aiap15-yong-quming-benedict-478E/blob/master/Images/image-2.png) 
+![Folder structure](https://github.com/askavania/cruise_prediction/blob/main/Cruise%20Ticket%20Prediction%20ML%20Pipeline/Images/image-2.png) 
 
 
 ### c. Execution Instructions
@@ -72,10 +79,10 @@ For a baseline model, we chose to use Logistic Regression, a commonly used model
 We then try out 2 other models, Random Forest and XGBoost classifiers.
 
 After hyperparameter tuning, Random Forest gave us a f1 score of 0.82.<br><br> 
-![Alt text](https://github.com/askavania/aiap15-yong-quming-benedict-478E/blob/master/Images/image.png)
+![Alt text](https://github.com/askavania/cruise_prediction/blob/main/Cruise%20Ticket%20Prediction%20ML%20Pipeline/Images/image.png)
 
 XGBoost gave us a f1-score of 0.82 as well.<br><br> 
-![Alt text](https://github.com/askavania/aiap15-yong-quming-benedict-478E/blob/master/Images/image-1.png)
+![Alt text](https://github.com/askavania/cruise_prediction/blob/main/Cruise%20Ticket%20Prediction%20ML%20Pipeline/Images/image-1.png)
 <br><br>
 We decided to go with the RandomForest Classifier model in the end based on the precision score, where they outperform xgboost in the 'Deluxe' ticket type. Reason being, for our use case, the company is trying to predict the ticket type customers will purchase in order to customise the experiences and amenities, which will be costly in time, effort and money. We will want to try to avoid investing in false positives.   
 
